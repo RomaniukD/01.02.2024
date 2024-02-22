@@ -1,0 +1,342 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Lato Light";
+}
+
+@media (max-width: 900px) {
+  body {
+    font-size: 8px;
+    overflow: scroll;
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+    font-size: 5px;
+    overflow: scroll;
+  }
+}
+
+img:hover {
+  transform: scale(1.03);
+  transition: 800ms;
+}
+
+img {
+  border-radius: 3%;
+  transition: 800ms;
+}
+
+* {
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover,
+#a_transform:hover,
+.top_arrow:hover {
+  transform: scale(1.1);
+  transition: 800ms;
+}
+
+.top_arrow{
+  display: block;
+  position:fixed;
+  bottom: 2em;
+  right: 2em;
+  border: 3px ridge #0077fe ;
+  border-radius: 100%;
+  text-align: center;
+  width: 4vh;
+  height: 4vh;
+  z-index: 1;
+}
+
+button,
+#a_transform,
+.top_arrow{
+  transition: 800ms;
+}
+
+button:hover,
+#places_a:hover{
+  mix-blend-mode:overlay;
+  transform: scale(1.1);
+  transition: 800ms;
+}
+
+header {
+  background: url("img/header-image.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 60em;
+}
+
+.overlay {
+  background: url("img/overlay.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: inherit;
+}
+
+.nav {
+  top: 2em;
+  position: relative;
+}
+
+.nav p {
+  display: inline-block;
+  margin-right: 3em;
+}
+
+.nav a {
+  color: #fff;
+}
+
+.introduction {
+  width: 35em;
+  margin-top: 10em;
+}
+
+.search > button {
+  background-color: #1b7dff;
+  width: 10em;
+  height: 3em;
+  border: none;
+  border-radius: 1em;
+  margin-left: 2em;
+  position: absolute;
+  ;
+}
+
+.circle {
+  width: 1em;
+  height: 1em;
+  border: #fff 2px solid;
+  border-radius: 50%;
+}
+
+::placeholder {
+  color: #fff;
+  font-size: 0.5em;
+}
+
+#benefits_section {
+  background-color: #fff;
+  height: max-content;
+  width: 90%;
+  position: relative;
+  top: -10em;
+  margin: auto;
+  border: 1px black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding-bottom: 10em;
+}
+
+#benefits_section * {
+  color: #000;
+}
+
+.benefits_content {
+  text-align: center;
+  margin-top: 13em;
+}
+
+.benefits_1 {
+  width: 29%;
+  word-wrap: break-word;
+  margin: 0% 0.5%;
+  text-align: left;
+  transition: 800ms;
+}
+
+.inspired_section {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+.inspired_section > h2,
+a {
+  color: #000;
+}
+
+.inspired_1 {
+  overflow: hidden;
+}
+
+.inspired_1 a {
+  float: right;
+  position: relative;
+}
+
+.img_big {
+  width: -webkit-fill-available;
+  height: 20em;
+  display: inline-flex;
+}
+
+.img_small {
+  width: -webkit-fill-available;
+  display: inline-flex;
+  flex: 1;
+}
+
+.img_container {
+  position: relative;
+  display: inline-block;
+  width: 50%;
+}
+
+.img_container2 {
+  position: relative;
+  display: inline-block;
+  width: 33.33%;
+}
+
+.img_text {
+  position: absolute;
+  bottom: 2em;
+  left: 2em;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.prefecture_featured {
+  width: 90%;
+  margin-top: 5em;
+  margin: auto;
+  display: block;
+}
+
+.prefecture_featured * {
+  display: inline-block;
+  color: #102746;
+}
+
+.prefecture_featured > .prefecture,
+.featured {
+  width: -webkit-fill-available;
+}
+
+.prefecture_featured h2,
+p {
+  margin-bottom: 2em;
+}
+
+.prefecture > .prefecture_text {
+  float: right;
+}
+
+.prefecture {
+  margin-bottom: 5em;
+}
+
+.featured > img {
+  float: right;
+}
+
+.prefecture_text,
+.featured_text {
+  width: 50%;
+  text-align: left;
+  display: inline-block;
+}
+
+.prefecture_text {
+  right: 2em;
+}
+
+.img_prefecture {
+  width: 30vw;
+}
+
+.places_to_visit {
+  margin: auto;
+  color: #102746;
+  width: 90%;
+  margin-bottom: 5em;
+}
+
+.places_to_visit h2 {
+  width: -webkit-fill-available;
+}
+
+.places_to_visit p {
+  color: #102746;
+  text-align: left;
+}
+
+#places {
+  width: 31.5%;
+  overflow-wrap: break-word;
+  display: inline-flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 0.5%;
+}
+
+#places img {
+  width: initial;
+  border-radius: 5%;
+}
+
+#places_h3 {
+  bottom: 5em;
+  position: relative;
+}
+
+#places_h3 h3 {
+  margin-left: 1em;
+  mix-blend-mode: difference;
+  font-size: 2em;
+}
+
+#places_a {
+  background-color: #006dfe;
+  width: max-content;
+  padding: 0.5em 1em;
+  border-radius: 0 0 50% 50%;
+  transition: 800ms;
+}
+
+footer {
+  background: rgba(14, 29, 40, 1);
+}
+
+.footer_link {
+  display: flex;
+  justify-content: right;
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.footer_link img {
+  height: fit-content;
+  align-self: center;
+  padding-right: 25em;
+}
+
+.footer_img {
+  padding-top: 5em;
+  margin-left: 5em;
+  position: relative;
+  width: max-content;
+}
+
+.footer_company,
+#footer_locations,
+.footer_social {
+  text-align: left;
+  margin-right: 5em;
+}
