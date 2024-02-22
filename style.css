@@ -76,14 +76,14 @@ button:hover,
 }
 
 header {
-  background: url("img/header-image.jpg");
+  background: url("header-image.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 60em;
 }
 
 .overlay {
-  background: url("img/overlay.png");
+  background: url("overlay.png");
   background-repeat: no-repeat;
   width: 100%;
   height: inherit;
