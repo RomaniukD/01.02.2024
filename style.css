@@ -67,6 +67,9 @@ button,
 .top_arrow{
   transition: 800ms;
 }
+a_transform {
+  display:inline-block;
+}
 
 button:hover,
 #places_a:hover{
