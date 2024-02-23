@@ -76,17 +76,19 @@ button:hover,
 }
 
 header {
-  background: url("header-image.jpg");
-  background-repeat: no-repeat;
+  background: url("header-image.jpg") no-repeat;
   background-attachment: fixed;
+  background-size: cover;
   height: 60em;
+  width: -webkit-fill-available;
 }
 
 .overlay {
-  background: url("overlay.png");
-  background-repeat: no-repeat;
-  width: 100%;
+  background: url("overlay.png") no-repeat;
+  background-size: cover;
+  width: inherit;
   height: inherit;
+  background-repeat: no-repeat;
 }
 
 .nav {
@@ -110,8 +112,8 @@ header {
 
 .search > button {
   background-color: #1b7dff;
-  width: 10em;
-  height: 3em;
+  width: 15vw;
+  height: 5vh;
   border: none;
   border-radius: 1em;
   margin-left: 2em;
