@@ -123,7 +123,15 @@ header {
   border-radius: 1em;
   margin-left: 2em;
   position: absolute;
-  ;
+}
+
+.search_placeholder {
+  text-decoration: none;
+    background: transparent;
+    border: 0px;
+    width: 80%;
+    font-size: 2em;
+    outline: none;
 }
 
 .circle {
