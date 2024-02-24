@@ -60,6 +60,7 @@ a:hover,
   width: 4vh;
   height: 4vh;
   z-index: 1;
+  box-shadow: .4em .4em .4em rgba(0, 0, 0, 0.2);
 }
 
 button,
@@ -67,8 +68,17 @@ button,
 .top_arrow{
   transition: 800ms;
 }
-a_transform {
+
+#a_transform {
   display:inline-block;
+}
+
+.open_div {
+  display: none;
+}
+
+.register_form[type="checkbox"]:checked ~ .open_div {
+  display: inline-block;
 }
 
 button:hover,
@@ -109,6 +119,15 @@ header {
 .nav a {
   color: #fff;
 }
+
+.nav input {
+  text-decoration: none;
+  outline: none;
+  background-color: transparent;
+  border-radius: 20em;
+  font-size: 1em;
+}
+
 
 .introduction {
   width: 35em;
