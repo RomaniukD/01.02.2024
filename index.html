@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,700;0,900;1,700&display=swap"
     >
     <link rel="stylesheet" href="style.css" >
+    <script src="popUp.js"></script>
   </head>
   <body>
     <div class="top_arrow">
@@ -29,9 +30,26 @@
             <p id="a_transform"><a href="#footer_locations">Locations</a></p>
             <p id="a_transform"><a href="#footer_video">Videos</a></p>
             <p id="a_transform">
-              <input class="a_transform register_form"  type="button" value="Sign in"></input>
+              <!--<input class="a_transform register_form" id="open_pop_up"  type="button" value="Sign in"></input>-->
+              <a href="#" class="a_transform register_form" id="open_pop_up">GET IN TOUCH</a>
+              
             </p>
-            <div class="open_div">Block</div>
+
+            <div class="pop_up" id="pop_up">
+              <div class="pop_up_container">
+                  <div class="pop_up_body" id="pop_up_body">
+                      <h2>Log in</h2>
+                      <form action="">
+                          <input type="text" placeholder="Name">
+                          <input type="text" placeholder="Surname">
+                          <button>Log In</button>
+  
+                      </form>
+                      <div class="pop_up_close" id="pop_up_close">&#10006</div>
+                  </div>
+              </div>
+          </div>
+
           </div>
         </div>
         <div class="container" style="margin-left: 10%">
@@ -307,13 +325,7 @@
     </div>
 
     <div style="background-color: rgba(14, 29, 40, 1)">
-      <video
-        src="Counter-Strike Global Offensive 2022.07.21 - 16.59.32.01.mp4"
-        allowfullscreen
-        style="width: 100%"
-        id="footer_video"
-        controls
-      ></video>
+      <iframe width="100%" height="550px" src="https://www.youtube.com/embed/y0wXQ5EdW_0?si=uJx5SCXkXsNnYtP5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 
     <footer>
@@ -357,5 +369,22 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      
+const openPopUp = document.getElementById('open_pop_up');
+const closePopUp = document.getElementById('pop_up_close');
+const popUp = document.getElementById('pop_up');
+
+openPopUp.addEventListener('click', function(e) {
+    e.preventDefault();
+    popUp.classList.add('active');
+});
+
+closePopUp.addEventListener('click', () => {
+    popUp.classList.remove('active');
+});
+
+    </script>
   </body>
 </html>
