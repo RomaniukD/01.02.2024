@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,700;0,900;1,700&display=swap"
     >
     <link rel="stylesheet" href="style.css" >
+    <script src="popUp.js"></script>
   </head>
   
   <body>
@@ -30,6 +31,7 @@
             <p id="a_transform"><a href="#footer_locations">Locations</a></p>
             <p id="a_transform"><a href="#footer_video">Videos</a></p>
             <p id="a_transform">
+<<<<<<< HEAD
                 <a href="#" class="a_transform " id="open_pop_up">GET IN TOUCH</a>
               </p>
 
@@ -48,6 +50,28 @@
           </div>
 
 
+=======
+              <!--<input class="a_transform register_form" id="open_pop_up"  type="button" value="Sign in"></input>-->
+              <a href="#" class="a_transform register_form" id="open_pop_up">GET IN TOUCH</a>
+              
+            </p>
+
+            <div class="pop_up" id="pop_up">
+              <div class="pop_up_container">
+                  <div class="pop_up_body" id="pop_up_body">
+                      <h2>Log in</h2>
+                      <form action="">
+                          <input type="text" placeholder="Name">
+                          <input type="text" placeholder="Surname">
+                          <button>Log In</button>
+  
+                      </form>
+                      <div class="pop_up_close" id="pop_up_close">&#10006</div>
+                  </div>
+              </div>
+          </div>
+
+>>>>>>> 46c119d6dd799967c83069a3defb7f6104326e72
           </div>
         </div>
         <div class="container" style="margin-left: 10%">
@@ -322,7 +346,11 @@
       </div>
     </div>
 
+<<<<<<< HEAD
     <div style="background-color: rgba(14, 29, 40, 1)" id="footer_video">
+=======
+    <div style="background-color: rgba(14, 29, 40, 1)">
+>>>>>>> 46c119d6dd799967c83069a3defb7f6104326e72
       <iframe width="100%" height="550px" src="https://www.youtube.com/embed/y0wXQ5EdW_0?si=uJx5SCXkXsNnYtP5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 
@@ -367,6 +395,26 @@
         </div>
       </div>
     </footer>
+<<<<<<< HEAD
    <script src="popUp.js"></script>
+=======
+
+    <script>
+      
+const openPopUp = document.getElementById('open_pop_up');
+const closePopUp = document.getElementById('pop_up_close');
+const popUp = document.getElementById('pop_up');
+
+openPopUp.addEventListener('click', function(e) {
+    e.preventDefault();
+    popUp.classList.add('active');
+});
+
+closePopUp.addEventListener('click', () => {
+    popUp.classList.remove('active');
+});
+
+    </script>
+>>>>>>> 46c119d6dd799967c83069a3defb7f6104326e72
   </body>
 </html>
